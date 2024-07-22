@@ -1,0 +1,4 @@
+numpy~=2.0.1
+numba~=0.60.0
+setuptools~=71.1.0
+matplotlib~=3.9.1
