@@ -3,16 +3,12 @@ Implementation of a lid driven cavity flow simulator using regular finite differ
 
 
 ## Example: Periodic drive
-The following image shows the simulation results for the following setup
-```math
-$$
-\begin{array}{ll}
-{Simulation\ time} & 160\ sec \\ \\
-Reynolds\ number & 2000 \\ \\
-Lid\ velocity & v=sin(t) \\
-\end{array}
-$$
-```
+The following image shows the simulation results for the following non-default configurations:
+
+- Simulation time:  $160\ sec$
+- Reynolds number: $2000$
+- Lid velocity   : $v_{top}=sin(t)$
+
 
 ![Alt Text](https://github.com/julianlork/lid-driven-cavity-flow-fdm/blob/main/simout/periodic_drive.gif)
 
