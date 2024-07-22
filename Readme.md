@@ -1,6 +1,6 @@
-## Lid Driven Cavity Flow Simulation
+# Lid Driven Cavity Flow Simulation
+## Overview
 Implementation of a lid driven cavity flow simulator using regular finite differences method.
-
 
 ## Example: Periodic drive
 The following image shows the simulation results for the following non-default configuration parameters:
@@ -9,17 +9,15 @@ The following image shows the simulation results for the following non-default c
 - Reynolds number: $2000$
 - Lid velocity   : $v_{top}(t)=sin(t)$
 
-
 ![Alt Text](https://github.com/julianlork/fdm-lid-driven-cavity-flow/blob/master/sim_out/periodic_drive/animation.gif)
 ![Alt Text](https://github.com/julianlork/fdm-lid-driven-cavity-flow/blob/master/sim_out/periodic_drive/velocity_stream.png)
 
-## Example: Periodic drive
+## Example: Constant drive
 The following image shows the simulation results for the following (default) configuration parameters:
 
 - Simulation time:  $60\ sec$
 - Reynolds number: $500$
 - Lid velocity   : $v_{top}(t)=1.0$
-
 
 ![Alt Text](https://github.com/julianlork/fdm-lid-driven-cavity-flow/blob/master/sim_out/constant_drive/animation.gif)
 ![Alt Text](https://github.com/julianlork/fdm-lid-driven-cavity-flow/blob/master/sim_out/constant_drive/velocity_stream.png)
