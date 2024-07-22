@@ -7,7 +7,7 @@ The following image shows the simulation results for the following non-default c
 
 - Simulation time:  $160\ sec$
 - Reynolds number: $2000$
-- Lid velocity   : $v_{top}(t)=sin(t)$
+- Lid velocity   : $v_{top}(t)=sin(t/3)$
 
 ![Alt Text](https://github.com/julianlork/fdm-lid-driven-cavity-flow/blob/master/sim_out/periodic_drive/animation.gif)
 ![Alt Text](https://github.com/julianlork/fdm-lid-driven-cavity-flow/blob/master/sim_out/periodic_drive/velocity_stream.png)
