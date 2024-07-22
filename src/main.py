@@ -18,7 +18,6 @@ def main() -> None:
     )
     sim_grid = gs.Grid(sim_config)
     anim_renderer = anim.ConcentrationRenderer(anim_config, sim_config, sim_grid)
-    print(anim_renderer.img_capture_rate)
     solver = sv.Solver(sim_config, sim_grid)
     result = solver.run(anim_renderer)
     plt.export_velocity_stream_plot(result, anim_config, sim_grid)
