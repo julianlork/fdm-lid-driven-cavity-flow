@@ -7,9 +7,9 @@ The following image shows the simulation results for the following setup
 ```math
 $$
 \begin{array}{ll}
-Simulation time & 160\ sec \\ \\
-Reynolds number & 2000 \\ \\
-Lid velocity & v=sin(t) \\
+\text{Simulation time} & 160\ sec \\ \\
+\text{Reynolds number }& 2000 \\ \\
+\text{Lid velocity} & v=sin(t) \\
 \end{array}
 $$
 ```
