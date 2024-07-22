@@ -35,6 +35,7 @@ class Solver:
             self.sim_results.omega = get_vorticity_update(self.sim_results.omega, self.n, self.h, self.sim_results.u_x, self.sim_results.u_y, self.dt, self.reynolds)
             self.sim_results.psi = get_streamline_update(self.sim_results.omega, self.sim_results.psi, self.n, self.h)
             self.sim_results.u_x, self.sim_results.u_y = get_velocity_update(self.sim_results.psi, self.sim_results.u_x, self.sim_results.u_y, self.n, self.h)
+            self.sim_results.u_x[:, -1] = self.lid_velocity(t)
             self.sim_results.conc = get_concentration_update(self.sim_results.conc, self.sim_results.u_x, self.sim_results.u_y, self.n, self.h, self.dt)
 
             if anim_renderer is not None and iteration % anim_renderer.img_capture_rate == 0:
