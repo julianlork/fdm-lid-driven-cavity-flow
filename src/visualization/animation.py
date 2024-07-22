@@ -68,7 +68,7 @@ class ConcentrationRenderer:
         )
 
         velocity_vector_field = self.ax2.quiver(
-            self.grid.grid_y[::VECTOR_FIELD_STEP, ::VECTOR_FIELD_STEP],
+            self.grid.grid_y[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
             self.grid.grid_x[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
             results.u_x[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
             results.u_y[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
