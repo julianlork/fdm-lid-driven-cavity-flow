@@ -1,22 +1,35 @@
 ## Lid Driven Cavity Flow Simulation
 Implementation of a lid driven cavity flow simulator using regular finite differences method.
 
+
+## Example: Periodic drive
+The following image shows the simulation results for the following setup
+```math
+$$
+\begin{array}{ll}
+Simulation time & 160\ sec \\ \\
+Reynolds number & 2000 \\ \\
+Lid velocity & v=sin(t) \\
+\end{array}
+$$
+```
+
 ![Alt Text](https://github.com/julianlork/lid-driven-cavity-flow-fdm/blob/main/simout/periodic_drive.gif)
 
-### Installation
-To ensure correct package-imports please use the provided ```setups.py``` file. In the top-folder of this package simply run:
+## Installation
+This project uses setuptools for packaging. To install the package simply run the following command in the project directory
 ```
 pip3 install -e .
 ```
 
-### Run script
-After successfull installation the main script can be executed using
+## Execution
+The simulation can then be executed by running
 ```
 python3 src/main.py
 ```
 
-### Governing equations in streamfunction-vorticity formulation
-#### Streamline function
+## Governing equations in streamfunction-vorticity formulation
+### Streamline function
 
 ```math
 $$
@@ -24,7 +37,7 @@ $$
 $$
 ```
 
-#### Vorticity
+### Vorticity
 
 ```math
 $$
@@ -32,7 +45,7 @@ $$
 $$
 ```
 
-#### Transport equation
+### Transport equation
 
 ```math
 $$
@@ -54,9 +67,9 @@ $$
 $$
 ```
 
-### Finite Differences Method formulation
+## Finite Differences Method formulation
 
-#### Streamline function update
+### Streamline function update
 ```math
 $$
 \psi_{i,j}^{n+1} = \frac{1}{4} \left( \psi_{i+1,j}^n + \psi_{i-1,j}^n + \psi_{i,j+1}^n + \psi_{i,j-1}^n + h^2 w_{i,j}^n \right)
@@ -64,7 +77,7 @@ $$
 ```
 
 
-#### Vorticity update
+### Vorticity update
 
 ```math
 $$
@@ -80,7 +93,7 @@ w_{i,j}^{n+1} = w_{i,j}^n + \Delta t\ f_{i,j}^n
 $$
 ```
 
-#### Velocity update
+### Velocity update
 
 ```math
 $$
@@ -94,7 +107,7 @@ u^n_{y|i,j} = \frac{\left( \psi^n_{i+1,j} - \psi^n_{i-1,j}\right)}{2h}
 $$
 ```
 
-#### Transport equation update
+### Transport equation update
 ```math
 $$
 C_{i,j}^{n+1} = C_{i,j}^n - \hat{Cu}_x - \hat{Cu}_y

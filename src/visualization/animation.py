@@ -72,7 +72,7 @@ class ConcentrationRenderer:
             self.grid.grid_x[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
             results.u_x[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
             results.u_y[1:-1:VECTOR_FIELD_STEP, 1:-1:VECTOR_FIELD_STEP],
-            color='tab:blue',
+            color='tab:cyan',
             scale=10.
         )
 

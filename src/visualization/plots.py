@@ -26,6 +26,7 @@ def export_velocity_stream_plot(result: SimulationResult, config: AnimationConfi
         result.u_x.T,
         result.u_y.T,
         density=1.5,
+        color="tab:cyan"
     )
     _ = ax.axis("equal")
     _ = ax.set_title("Velocity stream")
