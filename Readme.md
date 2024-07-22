@@ -5,7 +5,7 @@ Implementation of a lid driven cavity flow simulator using regular finite differ
 ## Example: Periodic drive
 The following image shows the simulation results for the following non-default configuration parameters:
 
-- Simulation time:  $160\ sec$
+- Simulation time:  $120\ sec$
 - Reynolds number: $2000$
 - Lid velocity   : $v_{top}(t)=sin(t/3)$
 

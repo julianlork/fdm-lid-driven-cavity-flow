@@ -9,9 +9,13 @@ import numpy as np
 def main() -> None:
 
     anim_config = cfg.AnimationConfig(
-        export_dir="./sim_out/constant_drive"
+        export_dir="./sim_out/periodic_drive"
     )
-    sim_config = cfg.SimulationConfig()
+    sim_config = cfg.SimulationConfig(
+        simulation_time_in_sec=120.0,
+        lid_velocity_fcn=lambda t: np.sin(t/3),
+        reynolds_number=2000,
+    )
     sim_grid = gs.Grid(sim_config)
     anim_renderer = anim.ConcentrationRenderer(anim_config, sim_config, sim_grid)
     solver = sv.Solver(sim_config, sim_grid)
