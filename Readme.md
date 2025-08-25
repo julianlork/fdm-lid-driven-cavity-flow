@@ -1,4 +1,4 @@
-# Lid Driven Cavity Flow Simulation
+# Lid Driven Cavity Flow Simulation using Finite Differences Method
 ## Overview
 Implementation of a lid driven cavity flow simulator using regular finite differences method.
 
